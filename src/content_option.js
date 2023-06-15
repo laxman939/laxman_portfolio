@@ -10,6 +10,7 @@ const introdata = {
   animated: {
     first: "React Developer",
     second: "Front End Web Developer",
+    third: "Freelancer",
     // second: "I love coding",
     // third: "Transforming Designs into Dynamic Websites",
     fourth: "Turning Ideas into Digital Reality",
@@ -20,48 +21,90 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "abit about my self",
+  title: "about myself",
   aboutme:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    "I'm a front-end React web developer and Freelancer with strong skills in HTML, CSS, and JavaScript. Within two months of joining my current company, I was honored with the Best Employee Award. With expertise in React and JavaScript, I have a proven track record of delivering successful projects as a freelancer.",
 };
 const worktimeline = [
   {
-    jobtitle: "Designer of week",
-    where: "YAdfi",
-    date: "2020",
+    jobtitle: "Associate Engineer",
+    company: "Block Stack Pvt Ltd",
+    where: "Bangalore",
+    date: "Since 2022-March",
   },
-  {
-    jobtitle: "Designer of week",
-    where: "Jamalya",
-    date: "2019",
-  },
-  {
-    jobtitle: "Designer of week",
-    where: "ALquds",
-    date: "2019",
-  },
+  // {
+  //   jobtitle: "Designer of week",
+  //   where: "Jamalya",
+  //   date: "2019",
+  // },
+  // {
+  //   jobtitle: "Designer of week",
+  //   where: "ALquds",
+  //   date: "2019",
+  // },
 ];
 
 const skills = [
   {
-    name: "Python",
-    value: 90,
+    name: "JavaScript",
+    value: 95,
+    name2: "TypeScript",
+    value2: 85,
   },
   {
-    name: "Djano",
-    value: 85,
-  },
-  {
-    name: "Javascript",
-    value: 80,
+    name: "HTML",
+    value: 95,
+    name2: "CSS",
+    value2: 90,
   },
   {
     name: "React",
-    value: 60,
+    value: 95,
+    name2: "Redux",
+    value2: 90,
   },
   {
+    name: "Bootstrap",
+    value: 95,
+    name2: "React-Bootstrap",
+    value2: 95,
+  },
+  {
+    name: "Material UI",
+    value: 95,
+    name2: "Tailwind",
+    value2: 95,
+  },
+  {
+    name: "Antd",
+    value: 95,
+    name2: "Styled Components,",
+    value2: 90,
+  },
+
+  {
     name: "Jquery",
-    value: 85,
+    value: 80,
+    name2: "NodeJS",
+    value2: 70,
+  },
+];
+const tools = [
+  {
+    name: "Git",
+    name2: "Github",
+  },
+  {
+    name: "Bitbucket",
+    name2: "Postman",
+  },
+  {
+    name: "Chrome dev tools",
+    name2: "VS Code",
+  },
+
+  {
+    name: "Jira",
   },
 ];
 
@@ -186,4 +229,5 @@ export {
   contactConfig,
   socialprofils,
   logotext,
+  tools,
 };
