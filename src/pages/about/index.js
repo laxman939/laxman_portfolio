@@ -90,6 +90,25 @@ export const About = () => {
                 );
               })}
             </>
+            <>
+              <h3 className="color_sec mt-3 mb-0">Tools</h3>
+              <ul className="">
+                {tools.map((data, i) => {
+                  return (
+                    <div className="d-flex gap-4 justify-content-between tools">
+                      <li key={i} className="progress-title mx-0 px-0 w-25">
+                        {data.name}
+                      </li>
+                      {data.name2 && (
+                        <li key={i} className="progress-title mx-0 px-0 w-25">
+                          {data.name2}
+                        </li>
+                      )}
+                    </div>
+                  );
+                })}
+              </ul>
+            </>
           </Col>
           <Col lg="4">
             <div className="">
@@ -100,31 +119,6 @@ export const About = () => {
               />
             </div>
           </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="7">
-            <h3 className="color_sec mt-3 mb-0">Tools</h3>
-
-            <ul className="">
-              {tools.map((data, i) => {
-                return (
-                  <div className="d-flex gap-4 justify-content-between tools">
-                    <li key={i} className="progress-title mx-0 px-0 w-25">
-                      {data.name}
-                    </li>
-                    {data.name2 && (
-                      <li key={i} className="progress-title mx-0 px-0 w-25">
-                        {data.name2}
-                      </li>
-                    )}
-                  </div>
-                );
-              })}
-            </ul>
-          </Col>
-          {/* <Col lg="7">
-         
-          </Col> */}
         </Row>
       </Container>
     </HelmetProvider>

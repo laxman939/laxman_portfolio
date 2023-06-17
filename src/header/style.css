@@ -33,7 +33,10 @@
 .nav_ac:hover {
   transform: scale(1.15);
 }
-
+.web_menu {
+  z-index: 10000;
+  background: var(--primary-color);
+}
 .br-top,
 .br-bottom,
 .br-right,

@@ -4,6 +4,10 @@ import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+
+const lapTop = <FontAwesomeIcon icon={faLaptopCode} />;
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -18,15 +22,19 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <div className="web_menu d-flex gap-4 align-items-center">
-            <Link className="navbar-brand nav_ac" to="/">
-              {logotext}
+            <Link
+              className="navbar-brand nav_ac"
+              to="/"
+              style={{ paddingRight: "34px" }}
+            >
+              <span className="">{lapTop}</span> {logotext}
             </Link>
             <Link
               // onClick={handleToggle}
               to="/portfolio"
               className="web_menu_item"
             >
-              Portfolio
+              Projects
             </Link>
             <Link to="/about" className="web_menu_item">
               About
@@ -68,7 +76,7 @@ const Headermain = () => {
                       className="my-3"
                     >
                       {" "}
-                      Portfolio
+                      Projects
                     </Link>
                   </li>
                   <li className="menu_item">
@@ -88,11 +96,16 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-              <a href={socialprofils.facebook}>Facebook</a>
-              <a href={socialprofils.github}>Github</a>
-              <a href={socialprofils.twitter}>Twitter</a>
+              <a href={socialprofils.facebook} target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a href={socialprofils.github} target="_blank" rel="noreferrer">
+                Github
+              </a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">
+              Copyright © 2023 Laxman Aavuladoddi. All Rights Reserved
+            </p>
           </div>
         </div>
       </header>

@@ -47,12 +47,21 @@ export const ContactUs = () => {
             variant: "success",
             show: true,
           });
-          setSuccessMsg(
-            "Thanks for your message! I will get back to you soon!"
-          );
+
+          // setSuccessMsg(
+          //   "Thanks for your message! I will get back to you soon!"
+          // );
           setTimeout(() => {
-            setSuccessMsg("");
-          }, 5000);
+            setFormdata({
+              email: "",
+              name: "",
+              message: "",
+              loading: false,
+              show: false,
+              alertmessage: "",
+              variant: "",
+            });
+          }, 1000);
         },
         (error) => {
           console.log(error.text);
@@ -61,16 +70,21 @@ export const ContactUs = () => {
             variant: "danger",
             show: true,
           });
-          setErrorMsg(`Sorry ${formData.name}, failed to send message`);
-          setTimeout(() => {
-            setErrorMsg("");
-          }, 5000);
+          // setErrorMsg(`Sorry ${formData.name}, failed to send message`);
 
-          console.log(document.getElementsByClassName("co_alert"));
           document.getElementsByClassName("co_alert")[0].scrollIntoView();
-          setFormdata({
-            message: "",
-          });
+
+          setTimeout(() => {
+            setFormdata({
+              email: "",
+              name: "",
+              message: "",
+              loading: false,
+              show: false,
+              alertmessage: "",
+              variant: "",
+            });
+          }, 1000);
         }
       );
   };
@@ -179,7 +193,7 @@ export const ContactUs = () => {
               <Row>
                 <Col
                   lg="12"
-                  className="form-group d-flex justify-content-center"
+                  className="form-group d-flex justify-content-center mb-2"
                 >
                   <button className="btn ac_btn w-100" type="submit">
                     {formData.loading ? "Sending..." : "Send"}
@@ -189,7 +203,12 @@ export const ContactUs = () => {
             </form>
           </Col>
           <Col lg="6" className="">
-            <img src={mailGiff} alt="" className="w-100 h-100" />
+            <img
+              src={mailGiff}
+              alt=""
+              className="w-100 rounded-4"
+              style={{ height: "98%" }}
+            />
           </Col>
         </Row>
       </Container>

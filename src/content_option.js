@@ -21,7 +21,7 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "about myself",
+  title: "About myself",
   aboutme:
     "I'm a front-end React web developer and Freelancer with strong skills in HTML, CSS, and JavaScript. Within two months of joining my current company, I was honored with the Best Employee Award. With expertise in React and JavaScript, I have a proven track record of delivering successful projects as a freelancer.",
 };
@@ -129,9 +129,10 @@ const services = [
 const dataportfolio = [
   {
     img: "https://picsum.photos/400/?grayscale",
+    name: "IMDB Clone",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "This react project features movie and TV show listings with favorites, filtering, and search functionality. Additionally, it includes user authentication with signup, signin, and logout capabilities.",
+    link: "https://imdb-clone-web.netlify.app/",
   },
   {
     img: "https://picsum.photos/400/800/?grayscale",
