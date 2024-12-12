@@ -22,13 +22,23 @@ export const Portfolio = () => {
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
             return (
-              <div key={i} className="po_item">
+              <div key={data.link} className="po_item">
                 <img src={data.img} alt="" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link} target="_blank" rel="noreferrer">
-                    view project
-                  </a>
+                  <div className="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                    <a href={data.link} target="_blank" rel="noreferrer">
+                      View project
+                    </a>
+                    <a
+                      href={data.sourceCode}
+                      target="_blank"
+                      rel="noreferrer"
+                      className=""
+                    >
+                      Source code
+                    </a>
+                  </div>
                 </div>
               </div>
             );

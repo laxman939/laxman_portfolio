@@ -90,25 +90,6 @@ export const About = () => {
                 );
               })}
             </>
-            <>
-              <h3 className="color_sec mt-3 mb-0">Tools</h3>
-              <ul className="">
-                {tools.map((data, i) => {
-                  return (
-                    <div className="d-flex gap-4 justify-content-between tools">
-                      <li key={i} className="progress-title mx-0 px-0 w-25">
-                        {data.name}
-                      </li>
-                      {data.name2 && (
-                        <li key={i} className="progress-title mx-0 px-0 w-25">
-                          {data.name2}
-                        </li>
-                      )}
-                    </div>
-                  );
-                })}
-              </ul>
-            </>
           </Col>
           <Col lg="4">
             <div className="">
@@ -118,6 +99,25 @@ export const About = () => {
                 className="w-100 h-75 border rounded-4 mt-5"
               />
             </div>
+            <>
+              <h3 className="color_sec mt-5">Tools</h3>
+              <ul className="">
+                {tools.map((data, i) => {
+                  return (
+                    <div className="tools">
+                      <li key={i} className="py-2 w-50">
+                        {data.name}
+                      </li>
+                      {data.name2 && (
+                        <li key={i} className="py-2 w-50">
+                          {data.name2}
+                        </li>
+                      )}
+                    </div>
+                  );
+                })}
+              </ul>
+            </>
           </Col>
         </Row>
       </Container>

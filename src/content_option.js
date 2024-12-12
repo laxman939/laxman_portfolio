@@ -1,3 +1,9 @@
+import imdb from "./assets/images/IMDB-Clone.png";
+import recipe from "./assets/images/Food-Recipe-Finder.png";
+import todo from "./assets/images/Todo.png";
+import blackjack from "./assets/images/BlackJack-Card-Game.png";
+import gridGame from "./assets/images/2048.png";
+
 const logotext = "Laxman";
 const meta = {
   title: "Laxman Aavuladoddi",
@@ -47,7 +53,7 @@ const worktimeline = [
 const skills = [
   {
     name: "JavaScript",
-    value: 95,
+    value: 90,
     name2: "TypeScript",
     value2: 85,
   },
@@ -65,9 +71,9 @@ const skills = [
   },
   {
     name: "Bootstrap",
-    value: 95,
+    value: 100,
     name2: "React-Bootstrap",
-    value2: 95,
+    value2: 100,
   },
   {
     name: "Material UI",
@@ -86,6 +92,12 @@ const skills = [
     name: "Jquery",
     value: 80,
     name2: "NodeJS",
+    value2: 70,
+  },
+  {
+    name: "NextJS",
+    value: 75,
+    name2: "React Native",
     value2: 70,
   },
 ];
@@ -128,78 +140,44 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: imdb,
     name: "IMDB Clone",
     description:
       "This react project features movie and TV show listings with favorites, filtering, and search functionality. Additionally, it includes user authentication with signup, signin, and logout capabilities.",
     link: "https://imdb-clone-web.netlify.app/",
+    sourceCode: "https://github.com/laxman939/IMDb-Clone",
   },
   {
-    img: "https://picsum.photos/400/800/?grayscale",
+    img: recipe,
+    name: "Food Recipe Finder",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "This is a straightforward recipe finder application featuring modals to display detailed recipe information. I've implemented the Edamam public API to enhance the functionality.",
+    link: "https://laxman939.github.io/food_recipe_finder/",
+    sourceCode: "https://github.com/laxman939/food_recipe_finder",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: todo,
+    name: "Todo",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "Todo application enables users to add, mark tasks as completed, and delete them. It employs local storage for persistent storage of todos, ensuring a seamless user experience.",
+    link: "https://todo-a25f3.web.app/",
+    sourceCode: "https://github.com/laxman939/todo-app",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: blackjack,
+    name: "Blackjack Card Game",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "The JavaScript-based Blackjack game project offers an interactive web-based version of the classic card game. Players can bet, receive cards, and make decisions against a computer dealer, all within an engaging user interface created with HTML and CSS.",
+    link: "https://laxman939.github.io/BlackJack-Game/",
+    sourceCode: "https://github.com/laxman939/BlackJack-Game",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: gridGame,
+    name: "2048 Grid Game",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "2048 is a web-based game created with JavaScript, HTML, and CSS. Players merge numbered tiles to reach the '2048' tile in a minimalist design.",
+    link: "https://grid-game-2048.netlify.app/",
+    sourceCode: "https://github.com/laxman939/2048-Game",
   },
 ];
 
