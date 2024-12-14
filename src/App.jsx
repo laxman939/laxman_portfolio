@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import withRouter from "./hooks/withRouter";
@@ -18,6 +18,25 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  useEffect(() => {
+    // Handle visibility change
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        document.title = "Missing you! Come back soon 👋";
+      } else {
+        document.title = "Laxman";
+      }
+    };
+
+    // Event listeners
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    // Cleanup
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
   return (
     <Router>
       <Background />

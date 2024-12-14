@@ -6,9 +6,9 @@ import gridGame from "./assets/2048.png";
 
 const logotext = "Laxman";
 const meta = {
-  title: "Laxman Aavuladoddi",
+  title: "Laxman",
   description:
-    "I’m Laxman Aavuladoddi Front End React Devloper, Currently Working Block Stack Pvt Ltd",
+    "I’m Laxman Aavuladoddi Front End React Devloper, Currently Working at Block Stack Pvt Ltd",
 };
 
 const introdata = {

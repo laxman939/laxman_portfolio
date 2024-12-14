@@ -10,6 +10,7 @@ import {
   tools,
 } from "../../content_option";
 import SkillBar from "../../components/SkillBar";
+import myPic from "../../assets/MyPic.png";
 
 export const About = () => {
   return (
@@ -17,7 +18,7 @@ export const About = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> About | {meta.title}</title>
+          {/* <title> About | {meta.title}</title> */}
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-2 mt-3 pt-md-3">
@@ -69,7 +70,10 @@ export const About = () => {
           <Col lg="4">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3"
+                src={
+                  myPic ||
+                  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3"
+                }
                 alt="Developer workspace"
                 className="w-100 h-75 border rounded-4 mt-5"
               />

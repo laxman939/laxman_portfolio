@@ -104,7 +104,7 @@ const Headermain = () => {
               </a>
             </div>
             <p className="copyright m-0">
-              Copyright © 2023 Laxman Aavuladoddi. All Rights Reserved
+              Copyright © 2025 Laxman Aavuladoddi. All Rights Reserved
             </p>
           </div>
         </div>
