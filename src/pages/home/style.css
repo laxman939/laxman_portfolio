@@ -33,8 +33,8 @@ section {
 .intro_sec {
   height: calc(100vh - 60px);
   min-height: 700px;
-  height: 100vh;
-  margin-top: -60px;
+  height: 98vh;
+  margin-top: -100px;
 }
 
 @media (max-width: 991.98px) {

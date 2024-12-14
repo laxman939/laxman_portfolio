@@ -16,14 +16,20 @@
   background: var(--secondary-color);
   padding: 6px;
   border: 1px solid var(--secondary-color);
-  transition: 0.3s ease;
-  font-size: 0;
-  min-height: 350px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 300px;
 }
 
 .po_item img {
   width: 100%;
-  min-height: 370px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
 }
 
 .po_item .content {
@@ -33,7 +39,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--overlay-color);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -41,41 +47,45 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-  border: 1px solid black;
-}
-
-.po_item .content {
-  opacity: 0;
-  transition-delay: 1s;
-  transition: 0.3s ease;
-  font-size: 20px;
+  padding: 1rem;
 }
 
 .po_item:hover {
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.po_item:hover img {
+  transform: scale(1.1);
 }
 
 .po_item:hover .content {
-  height: calc(100% - 30px);
-  width: calc(100% - 30px);
   opacity: 1;
 }
 
-.po_item:hover .content {
-  opacity: 1;
-  color: var(--secondary-color);
+.po_item .content p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .po_item .content a {
   background: var(--bg-color);
-  border: solid 1px var(--text-color);
-  padding: 4px 8px;
-  text-align: center;
-  font-size: 1rem;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid var(--text-color);
 }
 
 .po_item .content a:hover {
-  text-decoration: none;
+  background: var(--text-color);
+  color: var(--bg-color);
+  transform: translateY(-2px);
 }

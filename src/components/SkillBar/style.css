@@ -1,0 +1,44 @@
+.skill-bar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.progress-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0;
+  font-family: "Raleway";
+}
+
+.progress {
+  height: 5px;
+  background: gray;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 30px;
+  overflow: visible;
+}
+
+.progress .progress-bar {
+  position: relative;
+  background: #c58af9;
+  animation: animate-positive 2s;
+  overflow: visible;
+  opacity: 0.9;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: -30px;
+  right: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+@keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
