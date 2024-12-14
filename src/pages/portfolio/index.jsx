@@ -42,6 +42,23 @@ export const Portfolio = () => {
               </div>
             </div>
           ))}
+          <div className="po_item">
+            <img
+              src={
+                "https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
+              }
+              alt="see more"
+            />
+            <div className="content">
+              {/* <p className="rounded-2 border py-1 px-3">More Projects</p> */}
+              <div id="button_h" className="ac_btn btn mx-5">
+                More Projects
+                <div className="ring one"></div>
+                <div className="ring two"></div>
+                <div className="ring three"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </HelmetProvider>

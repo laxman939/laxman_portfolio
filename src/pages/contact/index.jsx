@@ -43,7 +43,7 @@ export const ContactUs = () => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: `Hi ${formData.name}, thanks for your message! I will get back to you soon!`,
+            alertmessage: `Hi ${formData.name}! 😊 Thanks for your message! I'll get back to you soon. 📩 Thank you for visiting! 🌟`,
             variant: "success",
             show: true,
           });
@@ -61,7 +61,7 @@ export const ContactUs = () => {
               alertmessage: "",
               variant: "",
             });
-          }, 3000);
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
@@ -84,7 +84,7 @@ export const ContactUs = () => {
               alertmessage: "",
               variant: "",
             });
-          }, 3000);
+          }, 5000);
         }
       );
   };
