@@ -3,6 +3,7 @@ import recipe from "./assets/Food-Recipe-Finder.png";
 import todo from "./assets/Todo.png";
 import blackjack from "./assets/BlackJack-Card-Game.png";
 import gridGame from "./assets/2048.png";
+import payCart from "./assets/paycart_landing.png";
 
 const logotext = "Laxman";
 const meta = {
@@ -155,6 +156,14 @@ const dataportfolio = [
       "This is a straightforward recipe finder application featuring modals to display detailed recipe information. I've implemented the Edamam public API to enhance the functionality.",
     link: "https://laxman939.github.io/food_recipe_finder/",
     sourceCode: "https://github.com/laxman939/food_recipe_finder",
+  },
+  {
+    img: payCart,
+    name: "Pay Cart",
+    description:
+      "PayCart is a feature-rich e-commerce web application built using Next.js, Tailwind CSS, and TypeScript, with secure payment processing powered by Razorpay. It includes key functionalities like user authentication (signup/login), managing favorites, a dynamic cart system, and a responsive design for seamless shopping across devices. This project showcases expertise in building scalable, modern web applications with clean code and smooth user experiences.",
+    link: "https://paycart-store.vercel.app/",
+    sourceCode: "https://github.com/laxman939/Pay-Cart",
   },
   {
     img: todo,
