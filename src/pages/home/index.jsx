@@ -54,7 +54,7 @@ export const Home = () => {
             </div>
             <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-start ms-4">
               <div className="align-self-center ">
-                <div className="intro mx-auto ps-5 pt-5">
+                <div className="intro mx-auto pt-5">
                   <h2 className="mb-1x">{introdata.title}</h2>
                   <h1 className="fluidz-48 mb-1x">
                     <Typewriter
